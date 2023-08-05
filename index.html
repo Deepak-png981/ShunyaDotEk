@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Mixing App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="outer-box">
+        <div id="container">
+            <div id="toolbar">
+                <label for="addTrack">Add Tracks</label>
+                <input type="file" id="addTrack" multiple>
+                <div id="export-container">
+                    <button id="exportButton">Export</button>
+                    <select id="exportFormat">
+                        <option value="wav">WAV</option>
+                    </select>
+                </div>
+            </div>
+            <div id="tracks"></div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,194 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('space-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+#outer-box {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 15px;
+    border: 3px solid #3498db;
+    /* Border color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.9);
+    /* Slightly transparent background */
+}
+
+#container {
+    width: 80%;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    overflow: hidden;
+}
+
+#toolbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+}
+
+#toolbar label {
+    background-color: #3498db;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+#toolbar label:hover {
+    background-color: #2980b9;
+}
+
+#toolbar input[type="file"] {
+    display: none;
+}
+
+.track {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    padding: 10px;
+    cursor: pointer;
+    margin: 5px;
+    border: none;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.waveform-container {
+    position: relative;
+    width: 80%;
+    align-items: center;
+
+    height: 10px;
+    /* Increased height for waveform */
+}
+
+.waveform {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    width: 50%;
+    height: 50px;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+
+.seekSlider {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    cursor: pointer;
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    height: 100%;
+}
+
+.seekSlider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 100%;
+    background: rgba(52, 152, 219, 0.5);
+    cursor: pointer;
+}
+
+.seekSlider::-moz-range-thumb {
+    width: 15px;
+    height: 100%;
+    background: rgba(52, 152, 219, 0.5);
+    cursor: pointer;
+}
+
+.audioPlayer {
+    display: none;
+}
+
+/* ... other styles ... */
+
+#export-container {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+
+#exportButton {
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    background-color: #2ecc71;
+    /* Export button color */
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#exportButton:hover {
+    background-color: #27ae60;
+}
+
+#exportFormat {
+    margin-left: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* ... other styles ... */
+
+.track-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.play-button,
+.stop-button {
+    padding: 5px 10px;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.stop-button {
+    background-color: #e74c3c;
+}
+
+.play-button:hover {
+    background-color: #2980b9;
+}
+
+.stop-button:hover {
+    background-color: #c0392b;
+}
+
+/* #tracks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+} */
